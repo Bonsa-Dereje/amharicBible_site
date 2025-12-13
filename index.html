@@ -1,99 +1,77 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Amharic Bible Download Site</title>
-    </head>
-    <body>
-        <header>
-            <table width = "100%">
-                <tr>
-                    <td align="left">
-                        <h1>Amharic Bible</h1>
-                    </td>
-                    <td align="right">
-                        <nav>
-                            <a href="download.html">Download</a> |
-                            <a href="features.html">Features</a>
+## index.html
 
-                        </nav>
-                    </td>
-                </tr>
-            </table>
-        </header>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amharic Bible Download Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-        <section>
-            <div class = "landingSection">
-                <p>Experience the Scriptures in a new and immersive way with our Amharic Bible PC App — a feature-packed, open-source Bible study platform designed for depth, clarity, and community.
-            </p>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="nav-container">
+        <h1 class="logo">Amharic Bible</h1>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="download.html">Download</a>
+            <a href="features.html">Features</a>
+            <a href="https://github.com/Bonsa-Dereje/Amharic-Bible-PC" target="_blank">GitHub</a>
+        </nav>
+    </div>
+</header>
 
-            <table width="100%">
-            <tr>
-                <td align="center">
-                <img src="./assets/title.png" alt="App Title Name">
-                </td>
-            </tr>
-            </table>
+<!-- LANDING -->
+<section class="landing">
+    <div class="landingSection">
 
+        <p class="intro-text">
+            Experience the Scriptures in a new and immersive way with our Amharic Bible PC App — a feature-packed, open-source Bible study platform designed for depth, clarity, and community.
+        </p>
 
+        <img src="./assets/title.png" alt="App Title Name" class="title-image">
 
-                <p>
-                Our app includes the Amharic Bible and the English KJV (with more translations on the way), along with verse-by-verse commentaries for every book.
-                </p>
-                <table width="100%">
+        <p class="description">
+            Our app includes the Amharic Bible and the English KJV (with more translations on the way), along with verse-by-verse commentaries for every book.
+        </p>
 
-                <tr>
-                    <td><img src="assets/appLanding.jpg" alt="Screenshot 1" width="100%"></td>
-                    <td><img src="assets/libraryTab.jpg" alt="Screenshot 2" width="100%"></td>
-                    <td><img src="assets/scs4.jpg" alt="Screenshot 3" width="100%"></td>
-                    <td><img src="assets/nodes.jpg" alt="Screenshot 4" width="100%"></td>
-                </tr>
-                </table>
-                <p> It also comes preloaded with 50+ spiritual books you can explore anytime.
+        <!-- SCREENSHOT TILES -->
+        <div class="tile-grid">
+            <div class="tile"><img src="assets/appLanding.jpg" alt="Screenshot 1"></div>
+            <div class="tile"><img src="assets/libraryTab.jpg" alt="Screenshot 2"></div>
+            <div class="tile"><img src="assets/scs4.jpg" alt="Screenshot 3"></div>
+            <div class="tile"><img src="assets/nodes.jpg" alt="Screenshot 4"></div>
+        </div>
 
-                Enhance your study sessions with interactive reading ambiences and foley soundscapes, and stay motivated with a built-in reading streak tracker inspired by Git.
-                <table width="100%">
-                    <tr>
-                        <td align="center">
-                        <img src="assets/heatMap.png" alt="Reading Streak Heatmap">
-                        </td>
-                    </tr>
-                </table>
+        <p class="description">
+            It also comes preloaded with 50+ spiritual books you can explore anytime. Enhance your study sessions with interactive reading ambiences and foley soundscapes, and stay motivated with a built-in reading streak tracker inspired by Git.
+        </p>
 
-                <p>
-                You can also write personal notes and reflections for every chapter — these appear whenever you revisit that chapter (and you can hide them whenever you wish).
+        <img src="assets/heatMap.png" alt="Reading Streak Heatmap" class="heatmap">
 
-                Upcoming features include Hebrew language support, audiobooks, and the ability to host or join Bible study groups directly inside the app.
+        <p class="description">
+            You can also write personal notes and reflections for every chapter — these appear whenever you revisit that chapter.
+            <br><br>
+            Upcoming features include Hebrew language support, audiobooks, and Bible study groups.
+        </p>
 
-                </hr>
+    </div>
+</section>
 
-                This project is still under active development and fully open-source.
-                Feel free to explore the code, contribute, or follow the journey:
+<!-- DOWNLOAD -->
+<section class="download-section">
+    <div class="download-card">
+        <h2>Download the App</h2>
+        <div class="download-links">
+            <a href="download.html">Windows</a>
+            <a href="download.html">Linux</a>
+            <a href="download.html">AMD</a>
+        </div>
+    </div>
+</section>
 
-                GitHub Repository:
-                <a href= "https://github.com/Bonsa-Dereje/Amharic-Bible-PC">Git Repo</a>
-                </p>
-            </div>
-        </section>
-
-        <section>
-            <div class="download section">
-
-                <table width="100%">
-                    <tr>
-                        <td align="center">
-                        <h2>Download the App</h2>
-                            <a href="download.html">Windows</a> |
-                            <a href="download.html">Linux</a> |
-                            <a href="download.html">AMD</a>
-                        </td>
-                    </tr>
-                </table>
-
-
-            </div>
-        </section>
-
-    </body>
-    </html>
+</body>
+</html>
