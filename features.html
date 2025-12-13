@@ -3,110 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Features | Amharic Bible</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <table width = "100%">
-            <tr>
-                <td align="left">
-                    <h1>Amharic Bible</h1>
-                </td>
-                <td align="right">
-                    <nav>
-                        <a href="index.html">Home</a> |
-                        <a href="download.html">Download</a> 
-                        
-                    </nav>
-                </td>
-            </tr>
-        </table> 
-    </header>
 
-<section>
-    <div class = "featuresSection">
-            <table width="100%">
-                <tr>
-                    <td align="center">
-                    <h2>Features</h2>
-                    </td>
-                </tr>
-            </table>   
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="nav-container">
+        <h1 class="logo">Amharic Bible</h1>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="download.html" class="nav-link">Download</a>
+            <a href="features.html" class="nav-link active">Features</a>
+        </nav>
+    </div>
+</header>
 
-    <div>
-        <table width="100%">
-            <tr>
-                <td width="50%" align="center" >
+<!-- FEATURES SECTION -->
+<section class="landing">
+    <div class="landingSection">
+        <h2 class="intro-text">Features</h2>
+
+        <!-- FEATURE 1 -->
+        <div class="tile-grid">
+            <div class="tile feature-tile">
                 <ul>
-                    <li>Amharic Bible KJV Version</li>
+                    <li>Amharic Bible (KJV)</li>
                     <li>English Bible (Multiple Versions)</li>
-                    <li>More Translations Coming Soon!</li>
+                    <li>More translations coming soon</li>
                 </ul>
-                </td>
+            </div>
+            <div class="tile feature-image">
+                <img src="./assets/applandingEng.jpg" alt="English Bible Version">
+            </div>
+        </div>
 
-               
-                <td width="50%" align="center" >
-                <img src="./assets/applandingEng.jpg" alt="English Bible Version" width="50%">
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <div>
-        <table width="100%">
-            <tr>
-                <td width="50%" align="center"  >
-                    <ul>
-                        <li>50+ preloaded spiritual books</li>
-                        <li>Interactive reading ambiences with foley sound</li>
-                        <li>Git-like reading streak tracking system</li>
-                    </ul>
-                </td>
-
-                
-                <td width="50%" align="center" >
-                <img src="./assets/libraryTab.jpg" alt="English Bible Version" width="50%">
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <div>
-        <table width="100%">
-            <tr>
-                <td width="50%" align="center" >
+        <!-- FEATURE 2 -->
+        <div class="tile-grid">
+            <div class="tile feature-tile">
                 <ul>
-                    <li>Create mind connection nodes</li>
-                    <li>Upto Five books of your own</li>
-                    <li>Journals based on your bookmarks</li>
+                    <li>50+ preloaded spiritual books</li>
+                    <li>Interactive reading ambiences with foley sound</li>
+                    <li>Git-like reading streak tracking system</li>
                 </ul>
-                </td>
+            </div>
+            <div class="tile feature-image">
+                <img src="./assets/libraryTab.jpg" alt="Library Tab">
+            </div>
+        </div>
 
-               
-                <td width="50%" align="center" >
-                <img src="./assets/nodes.jpg" alt="English Bible Version" width="50%">
-                </td>
-            </tr>
-        </table>
+        <!-- FEATURE 3 -->
+        <div class="tile-grid">
+            <div class="tile feature-tile">
+                <ul>
+                    <li>Create mind-connection nodes</li>
+                    <li>Up to five books of your own</li>
+                    <li>Journals based on bookmarks</li>
+                </ul>
+            </div>
+            <div class="tile feature-image">
+                <img src="./assets/nodes.jpg" alt="Nodes Feature">
+            </div>
+        </div>
+
     </div>
+</section>
 
+<!-- DOWNLOAD SECTION -->
+<section class="download-section">
+    <div class="download-card">
+        <h2>Download the App</h2>
+        <div class="download-links">
+            <a href="download.html" class="download-btn">Windows</a>
+            <a href="download.html" class="download-btn">Linux</a>
+            <a href="download.html" class="download-btn">AMD</a>
+        </div>
     </div>
-</section>    
-
-<section>
-    <div class="download section">
-
-        <table width="100%">
-            <tr>
-                <td align="center">
-                <h2>Download the App</h2>
-                    <a href="download.html">Windows</a> |
-                    <a href="download.html">Linux</a> |
-                    <a href="download.html">AMD</a>                    
-                </td>
-            </tr>
-        </table>   
-    </div>    
 </section>
 
 </body>
