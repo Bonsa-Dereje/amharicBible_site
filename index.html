@@ -1,77 +1,110 @@
-## index.html
-
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amharic Bible Download Site</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="nav-container">
-        <h1 class="logo">Amharic Bible</h1>
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="download.html">Download</a>
-            <a href="features.html">Features</a>
-            <a href="https://github.com/Bonsa-Dereje/Amharic-Bible-PC" target="_blank">GitHub</a>
-        </nav>
-    </div>
-</header>
-
-<!-- LANDING -->
-<section class="landing">
-    <div class="landingSection">
-
-        <p class="intro-text">
-            Experience the Scriptures in a new and immersive way with our Amharic Bible PC App — a feature-packed, open-source Bible study platform designed for depth, clarity, and community.
-        </p>
-
-        <img src="./assets/title.png" alt="App Title Name" class="title-image">
-
-        <p class="description">
-            Our app includes the Amharic Bible and the English KJV (with more translations on the way), along with verse-by-verse commentaries for every book.
-        </p>
-
-        <!-- SCREENSHOT TILES -->
-        <div class="tile-grid">
-            <div class="tile"><img src="assets/appLanding.jpg" alt="Screenshot 1"></div>
-            <div class="tile"><img src="assets/libraryTab.jpg" alt="Screenshot 2"></div>
-            <div class="tile"><img src="assets/scs4.jpg" alt="Screenshot 3"></div>
-            <div class="tile"><img src="assets/nodes.jpg" alt="Screenshot 4"></div>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Amharic Bible</h1>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="download.html">Download</a>
+                <a href="features.html">Features</a>
+                <a href="https://github.com/Bonsa-Dereje/Amharic-Bible-PC" target="_blank">GitHub</a>
+            </nav>
         </div>
+    </header>
 
-        <p class="description">
-            It also comes preloaded with 50+ spiritual books you can explore anytime. Enhance your study sessions with interactive reading ambiences and foley soundscapes, and stay motivated with a built-in reading streak tracker inspired by Git.
-        </p>
+    <!-- LANDING -->
+    <section class="landing">
+        <div class="landingSection">
 
-        <img src="assets/heatMap.png" alt="Reading Streak Heatmap" class="heatmap">
+            <p class="intro-text">
+                Experience the Scriptures in a new and immersive way with our Amharic Bible PC App — a feature-packed,
+                open-source Bible study platform designed for depth, clarity, and community.
+            </p>
 
-        <p class="description">
-            You can also write personal notes and reflections for every chapter — these appear whenever you revisit that chapter.
-            <br><br>
-            Upcoming features include Hebrew language support, audiobooks, and Bible study groups.
-        </p>
+            <img src="./assets/title.png" alt="App Title Name" class="title-image">
 
-    </div>
-</section>
+            <p class="description">
+                Our app includes the Amharic Bible and the English KJV (with more translations on the way), along with
+                verse-by-verse commentaries for every book.
+            </p>
 
-<!-- DOWNLOAD -->
-<section class="download-section">
-    <div class="download-card">
-        <h2>Download the App</h2>
-        <div class="download-links">
-            <a href="download.html">Windows</a>
-            <a href="download.html">Linux</a>
-            <a href="download.html">AMD</a>
+            <!-- SCREENSHOT TILES -->
+            <div class="tile-grid">
+                <div class="tile"><img src="assets/appLanding.jpg" alt="Screenshot 1"></div>
+                <div class="tile"><img src="assets/libraryTab.jpg" alt="Screenshot 2"></div>
+                <div class="tile"><img src="assets/scs4.jpg" alt="Screenshot 3"></div>
+                <div class="tile"><img src="assets/nodes.jpg" alt="Screenshot 4"></div>
+            </div>
+
+            <p class="description">
+                It also comes preloaded with 50+ spiritual books you can explore anytime. Enhance your study sessions
+                with interactive reading ambiences and foley soundscapes, and stay motivated with a built-in reading
+                streak tracker inspired by Git.
+            </p>
+
+            <img src="assets/heatMap.png" alt="Reading Streak Heatmap" class="heatmap">
+
+            <p class="description">
+                You can also write personal notes and reflections for every chapter — these appear whenever you revisit
+                that chapter.
+                <br><br>
+                Upcoming features include Hebrew language support, audiobooks, and Bible study groups.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- DOWNLOAD -->
+    <section class="download-section">
+        <div class="download-card">
+            <h2>Download the App</h2>
+            <div class="download-links">
+                <a href="download.html">Windows</a>
+                <a href="download.html">Linux</a>
+                <a href="download.html">AMD</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER POPUP -->
+    <div class="popup-overlay" id="newsletterPopup">
+        <div class="popup-content">
+            <span class="close-btn" id="closePopup">&times;</span>
+            <h3>Stay Updated!</h3>
+            <p>Sign up for our newsletter to get the latest updates on Amharic Bible translations and features.</p>
+            <form class="download-form" style="margin: 0; display: block;">
+                <input type="email" placeholder="Enter your email" required
+                    style="width: 100%; margin-bottom: 10px; padding: 10px; border-radius: 6px; border: 1px solid #30363d; background: #0d1117; color: #fff;">
+                <button type="submit" class="btn-primary" style="width: 100%;">Sign Up</button>
+            </form>
         </div>
     </div>
-</section>
-
 </body>
+
 </html>
+<script>
+    const links = document.querySelectorAll('.download-links a');
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            alert('Redirecting to download page...');
+        });
+    });
+    setTimeout(() => {
+        document.getElementById('newsletterPopup').style.display = 'flex';
+    }, 5000);
+
+    document.getElementById('closePopup').addEventListener('click', () => {
+        document.getElementById('newsletterPopup').style.display = 'none';
+    });
+</script>

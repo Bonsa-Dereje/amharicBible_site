@@ -1,84 +1,78 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Amharic Bible</title>
-    </head>
-    <body>
-        <header>
-            <table width="100%">
-                <tbody>
-                    <tr>
-                        <td align="left">
-                            <h1>Amharic Bible</h1>
-                        </td>
-                        <td align="right">
-                            <nav>
-                                <a href="index.html">Home</a>
-                                &nbsp; | &nbsp;
-                                <a href="features.html">Features</a>
-                            </nav>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </header>
 
-        <section>
-            <table width="100%">
-                <tbody>
-                    <tr>
-                        <td align="center">
-                            <form>
-                                Enter your email:
-                                <br />
-                                <input
-                                    type="email"
-                                    name="email"
-                                    placeholder="you@example.com"
-                                    required
-                                />
-                                <br />
-                                <br />
-                                Select your platform:
-                                <br />
-                                <input
-                                    type="radio"
-                                    name="platform"
-                                    value="Windows"
-                                    required
-                                />
-                                Windows
-                                <input
-                                    type="radio"
-                                    name="platform"
-                                    value="Linux"
-                                />
-                                Linux
-                                <input
-                                    type="radio"
-                                    name="platform"
-                                    value="ARM"
-                                />
-                                ARM
-                                <br />
-                                <br />
-                                <input
-                                    type="submit"
-                                    value="Get Download Link"
-                                />
-                            </form>
-                            <br />
-                            <img
-                                src="./assets/download.png"
-                                alt="Download the App"
-                                width="15%"
-                            />
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amharic Bible</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- NAV BAR -->
+    <header class="navbar">
+        <div class="nav-left">
+            <h1 class="logo">Amharic Bible</h1>
+        </div>
+        <nav class="nav-right">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="features.html" class="nav-link">Features</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <!-- DOWNLOAD TILE -->
+        <section class="tile download-tile">
+            <h2>Get the App</h2>
+
+            <form class="download-form">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="you@example.com" required />
+
+                <label>Platform</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="platform" value="Windows" required /> Windows</label>
+                    <label><input type="radio" name="platform" value="Linux" /> Linux</label>
+                    <label><input type="radio" name="platform" value="ARM" /> ARM</label>
+                </div>
+
+                <button type="submit" class="btn-primary">
+                    Get Download Link
+                </button>
+            </form>
+
+            <img src="./assets/download.png" alt="Download the App" class="download-image" />
         </section>
-    </body>
+
+        <!-- FEATURE TILES -->
+        <section class="tiles-row">
+            <div class="tile feature-tile">
+                <h3>Offline Reading</h3>
+                <p>Read the Bible without internet access.</p>
+            </div>
+
+            <div class="tile feature-tile">
+                <h3>Fast Search</h3>
+                <p>Find verses instantly in Amharic.</p>
+            </div>
+
+            <div class="tile feature-tile">
+                <h3>Lightweight</h3>
+                <p>Runs smoothly on low-end systems.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.querySelector('.download-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you! The download link has been sent to your email.');
+        });
+    </script>
+</body>
+
 </html>
